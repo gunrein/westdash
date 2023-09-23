@@ -1,7 +1,7 @@
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators.js";
+import { LitElement, html } from 'lit';
+import { customElement } from 'lit/decorators.js';
 
-@customElement("wd-dashboard")
+@customElement('wd-dashboard')
 class WdDashboard extends LitElement {
   override render() {
     return html`<div>Hello from WdDashboard!</div>`;
@@ -10,7 +10,7 @@ class WdDashboard extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "wd-text": WdDashboard;
+    'wd-text': WdDashboard;
   }
 }
 
