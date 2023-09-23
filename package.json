@@ -1,0 +1,84 @@
+{
+  "name": "@westdash/westdash",
+  "description": "A dashboard framework built around web standards with a minimal set of dependencies.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gunrein/westdash",
+  "author": "Greg Unrein",
+  "license": "MIT",
+  "customElements": "dist/custom-elements.json",
+  "web-types": "./dist/web-types.json",
+  "type": "module",
+  "types": "dist/westdash.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/westdash.d.ts",
+      "import": "./dist/westdash.js"
+    },
+    "./dist/custom-elements.json": "./dist/custom-elements.json",
+    "./dist/westdash.js": "./dist/westdash.js",
+    "./dist/components/*": "./dist/components/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "web components",
+    "custom elements",
+    "components",
+    "dashboards",
+    "embeddable"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunrein/westdash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gunrein/westdash/issues"
+  },
+  "scripts": {
+    "dev:ts": "tsc --watch",
+    "dev:serve": "wds --watch",
+    "dev": "rm -rf ./dist && npm-run-all --parallel dev:*",
+    "build:ts": "tsc",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint 'src/**/*.ts'",
+    "lint:lit-analyzer": "lit-analyzer",
+    "prettier": "prettier . --write",
+    "analyze": "cem analyze --litelement --globs \"src/**/*.ts\" --outdir dist",
+    "analyze:watch": "cem analyze --litelement --globs \"src/**/*.ts\" --outdir dist --watch",
+    "serve": "wds --watch",
+    "serve:prod": "MODE=prod npm run serve",
+    "test": "npm run test:dev && npm run test:prod",
+    "test:dev": "wtr",
+    "test:watch": "wtr --watch",
+    "test:prod": "MODE=prod wtr",
+    "test:prod:watch": "MODE=prod wtr --watch"
+  },
+  "dependencies": {
+    "lit": "^2.8.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.4",
+    "@open-wc/testing": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "@web/dev-server": "^0.3.1",
+    "@web/dev-server-legacy": "^2.0.1",
+    "@web/test-runner": "^0.17.1",
+    "@web/test-runner-playwright": "^0.10.1",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
+    "custom-element-vs-code-integration": "^1.2.1",
+    "esbuild": "^0.19.3",
+    "eslint": "^8.50.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-lit": "^1.9.1",
+    "eslint-plugin-lit-a11y": "^4.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-wc": "^2.0.3",
+    "npm-check-updates": "16.14.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

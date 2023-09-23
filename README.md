@@ -19,9 +19,9 @@ or be a more general data analytics dashboard system.
 - Embrace the power of web standards, e.g. use web components, HTML, Javascript, CSS (no big web frameworks)
 - Vendor neutral
 - Minimal runtime and devtime dependencies to simplify coding
-    - Ideal: other than a modern web browser, the dev toolchain is optional
-    - If used, the toolchain provides static types (e.g. JSDoc Typescript), type checking, and
-      other quality and ergonomic tooling
+  - Ideal: other than a modern web browser, the dev toolchain is optional
+  - If used, the toolchain provides static types (e.g. JSDoc Typescript), type checking, and
+    other quality and ergonomic tooling
 
 ## Features (probably)
 
@@ -60,7 +60,7 @@ or be a more general data analytics dashboard system.
 - Handles authentication to the service(s) being queried
 - Query translators should be modular and easy to express
 - Do this either in a toolchain that compiles to WASM or in Typescript
-    - Open question as to which runtime this will execute in
+  - Open question as to which runtime this will execute in
 
 ### Westdash App
 
@@ -95,7 +95,7 @@ Adapter for using Metabase dashboard and query configuration to drive Westdash d
 
 - Vendors and users sponsor (example: [the DuckDB Foundation](https://duckdb.org/foundation/))
 - Setup a company to offer enterprise-oriented functionality (multi-user, access control, commercial adapters, etc.)
-    - Might compromise the vision of being vendor neutral
+  - Might compromise the vision of being vendor neutral
 - Setup a consulting/support/development-oriented company
 - Provide Bring Your Own Cloud (BYOC) and/or SaaS hosting
 - Sell non-OSS licenses
