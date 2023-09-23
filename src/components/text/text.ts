@@ -13,3 +13,5 @@ declare global {
     "wd-text": WdText;
   }
 }
+
+export default WdText;
