@@ -3,19 +3,41 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Development index</title>
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script type="module" src="../dist/westdash.js"></script>
+    <title>Westdash Development index</title>
+    <script src="../../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="../../dist/westdash.js"></script>
   </head>
   <body>
-    <h2>&lt;wd-dashboard&gt;</h2>
-    <wd-dashboard></wd-dashboard>
+    <section>
+      <h1>Westdash Development index</h1>
+      <p>
+        This page lists all of the Westdash components.
+      </p>  
+    </section>
 
-    <wd-dashboard>
-      <p>Some text</p>
-    </wd-dashboard>
+    <section>
+      <h2>&lt;wd-dashboard&gt;</h2>
+      <wd-dashboard></wd-dashboard>  
 
-    <h2>&lt;wd-text&gt;</h2>
-    <wd-text></wd-text>
+      <wd-dashboard>
+        <p>Some text</p>
+      </wd-dashboard>
+    </section>
+
+    <section>
+      <h2>&lt;wd-text&gt;</h2>
+      <wd-text></wd-text>
+    </section>
+
+    <section>
+      <h2>&lt;wd-variable&gt;</h2>
+      <h3>Basic usage</h3>
+      <wd-variable></wd-variable>
+
+      <h3 id="wd-variable-dashboard">Usage in a dashboard</h3>
+      <wd-dashboard>
+        <wd-variable></wd-variable>
+      </wd-dashboard>
+    </section>
   </body>
 </html>
